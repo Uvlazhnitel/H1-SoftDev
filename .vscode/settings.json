@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "__locale": "cpp",
+        "string": "cpp",
+        "list": "cpp",
+        "sstream": "cpp",
+        "fstream": "cpp",
+        "vector": "cpp"
+    }
+}
