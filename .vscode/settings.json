@@ -5,6 +5,9 @@
         "list": "cpp",
         "sstream": "cpp",
         "fstream": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "iostream": "cpp",
+        "algorithm": "cpp",
+        "map": "cpp"
     }
 }
