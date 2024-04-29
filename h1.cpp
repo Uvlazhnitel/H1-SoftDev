@@ -11,26 +11,43 @@
 using namespace std;
 int main(){
     ifstream file("examples.txt");
+    ofstream outputFile("output.txt");
+
+
+    string word;
+
+
     map<string,int> mf;
     map<char,int>mf2;
     map<char,string>mf3;
+
+
     int maxValue = 0;
-    int maxValue1 = 0;
-    int count = 0;
+
     string thatWord = "";
     char prevLet='\0';
-    string word;
+    
+
     if(file.is_open()){
-        while(file>>word){
-            for(char &c:word){
-                c=tolower(c);
+        char c;
+        string word;
+        while(file.get(c)){
+            if(isalpha(c)){
+                word += tolower(c);
+            }else if(!word.empty()) {
+                mf[word]++;
+                word.clear();
             }
+        }
+
+        if (!word.empty()) {
             mf[word]++;
         }
 
         for (char letter = 'a'; letter <= 'z'; ++letter) {
             mf3[letter];
         }
+
         for(auto &v:mf){
             if(prevLet!=v.first[0]){
                 maxValue = 0;
@@ -51,15 +68,15 @@ int main(){
             }
         }
 
-    }
-        
-        cout<<"\n";
         for (auto it=mf3.begin(); it!=mf3.end(); ++it){
-            cout << it->first << " => " << it->second << '\n';
+            outputFile<< it->first << " => " << it->second << '\n';
          }
 
         cout<<"\n";
 
+    }else {
+        cerr<<"Error opening file!";
+    }
 
-        file.close();
-        }
+    file.close();
+    }

@@ -1,26 +1,26 @@
-a: albino
-b: ba
-c: computer
-d: dog
-e: eat
-f: 
-g: 
-h: 
-i: 
-j: 
-k: 
-l: lal
-m: mistake
-n: 
-o: 
-p: 
-q: 
-r: 
-s: son
-t: the
-u: 
-v: 
-w: 
-x: 
-y: 
-z: 
+a => apple
+b => 
+c => 
+d => 
+e => 
+f => 
+g => 
+h => 
+i => 
+j => 
+k => 
+l => 
+m => 
+n => 
+o => 
+p => 
+q => 
+r => 
+s => 
+t => 
+u => 
+v => 
+w => 
+x => 
+y => 
+z => 
